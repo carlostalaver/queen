@@ -1,0 +1,62 @@
+<div id="public-layout-two-column" class="container">
+        
+    <div class="header-wrapper row">
+        <header class="col-xs-12">
+            <h1>Queen</h1>
+            <p>Banda británica de rock formada en 1970 en Londres.</p>
+        </header>
+    </div>
+
+    <div class="nav-wrapper row">
+        <nav class="col-xs-12">
+            <ul>
+                <li ng-class="currentLocation == '/' ? 'active' : ''"><a href="#/">Inicio</a></li>
+                <li ng-class="currentLocation.startsWith('/banda') ? 'active' : ''"><a href="#/banda">La Banda</a></li>
+                <li ng-class="currentLocation == '/discografia' ? 'active' : ''"><a href="#/discografia">Discografia</a></li>
+                <li ng-class="currentLocation == '/contacto' ? 'active' : ''"><a href="#/contacto">Contacto</a></li>
+                <li ng-class="currentLocation == '/login' ? 'active' : ''"><a href="#/login">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="central-wrapper row">
+        <aside class="col-xs-12 col-lg-4">
+            <nav>
+                <header>
+                    <h2>Integrantes del grupo</h2>
+                </header>
+                <ul>
+                    <li ng-class="integrante == 'Queen' ? 'active' : ''"><a href="#/banda">Queen</a></li>
+                    <li ng-class="integrante == 'Brian May' ? 'active' : ''"><a href="#/banda/Brian May">Brian May</a></li>
+                    <li ng-class="integrante == 'Freddie Mercury' ? 'active' : ''"><a href="#/banda/Freddie Mercury">Freddie Mercury</a></li>
+                    <li ng-class="integrante == 'John Deacon' ? 'active' : ''"><a href="#/banda/John Deacon">John Deacon</a></li>
+                    <li ng-class="integrante == 'Roger Taylor' ? 'active' : ''"><a href="#/banda/Roger Taylor">Roger Taylor</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="col-xs-12 col-lg-8">
+            <article>
+                <header>
+                    <h3>{{integrante}}</h3>
+                </header>
+                <p>
+                    {{descripcion}}
+                </tp>
+                <p class="text-right"><em>Última fecha de actualización : </em><strong>{{fechaActual}}</strong></p>
+            </article>
+        </section>
+    </div>
+    
+    <div class="footer-wrapper row">
+        <footer class="col-xs-12">
+                <header>
+                    <h2>Links Oficiales</h2>
+                </header>
+                <a href="#/">Inicio</a> |
+                <a href="http://www.queenonline.com/" target="_blank">Sitio Oficial</a> | 
+                <a href="#/contacto">Contacto</a>
+        </footer>
+    </div>
+
+</div>

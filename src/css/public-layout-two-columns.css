@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/*
+	Estilos para layout publico de 2 columnas.
+*/
+#public-layout-two-column {
+	font-family: 'Open Sans',serif;
+	border: 1px solid;
+}
+#public-layout-two-column > .header-wrapper {
+	height: 150px;
+	color: white;
+	background-image: url(../img/queen.jpg);
+	background-size: contain;
+}
+#public-layout-two-column > .nav-wrapper {
+	background-color: black;
+}
+#public-layout-two-column > .nav-wrapper > nav ul {
+	padding-left: 0;
+}
+#public-layout-two-column > .nav-wrapper > nav li {
+	display: inline;
+}
+#public-layout-two-column > .nav-wrapper > nav li a {
+	color: white;
+}
+#public-layout-two-column > .nav-wrapper > nav li.active a {
+	color: white;
+	text-decoration: underline;
+	font-size: 16px;
+	font-weight: bold;
+}
+#public-layout-two-column > .header-wrapper > header > * {
+	display: inline;
+}
+#public-layout-two-column > .header-wrapper > header p {
+	background-color: black;
+}
+#public-layout-two-column > .central-wrapper > aside, #public-layout-two-column > .central-wrapper > section {
+	min-height: 300px;
+}
+#public-layout-two-column > .central-wrapper > aside nav li.active a{
+	text-decoration: underline;
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+}
+#public-layout-two-column > .footer-wrapper {
+	background-color: black;
+	color: white;
+}
+#public-layout-two-column > .footer-wrapper a {
+	color: white;
+}
+
+/* Responsivos segun https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries */
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	/*
+		Estilos para layout publico de 2 columnas.
+	*/
+	#public-layout-two-column > .central-wrapper > aside, #public-layout-two-column > .central-wrapper > section  {
+		min-height: initial;
+	}
+	h1 {
+		font-size: 22px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h3 {
+		font-size: 18px;
+	}
+}
