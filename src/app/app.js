@@ -10,7 +10,7 @@ app.config(['$routeProvider', function ($routeProvider){
       controller: 'bandaController'
     })
     .otherwise({
-      redirecTo:'/'
+      redirectTo:'/'
     });
 }]);
  
